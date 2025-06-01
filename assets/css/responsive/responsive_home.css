@@ -1,0 +1,165 @@
+/* ============================================================================
+   RESPONSIVE STYLES - Mobile & Tablet Only (Tidak mengubah tampilan Desktop)
+============================================================================ */
+
+/* -------------------------------
+   Tablet (≤ 1024px)
+-------------------------------- */
+@media (max-width: 1024px) {
+  .home {
+    padding-top: 80px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-img {
+    order: -1;
+    margin-bottom: 1rem;
+  }
+
+  .home-img img {
+    width: 300px;
+    height: auto;
+  }
+
+  .home-content {
+    max-width: 90vw;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .home-content h1 {
+    font-size: clamp(2rem, 5vw, 2.5rem) !important;
+    line-height: 1.25 !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    width: 100%;
+    color: #fff; /* Ubah sesuai kebutuhan */
+    background-color: transparent; /* Hapus warna hitam sebelumnya */
+  }
+
+  .home-content h3 {
+    font-size: clamp(1.3rem, 4vw, 1.6rem);
+    line-height: 1.2;
+    font-size: clamp(1.1rem, 3.5vw, 1.5rem);
+    line-height: 1.3;
+    margin-bottom: 0.8rem;
+    word-break: break-word;
+  }
+
+  .home-content p {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    line-height: 1.5;
+    margin: 1rem auto 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .home-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1.2rem;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin: 1.5rem auto;
+  }
+
+  .social-media a {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.2rem;
+  }
+
+  .recent-project-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .recent-project-container .recent-project-box {
+    width: 100%;
+  }
+}
+
+/* -------------------------------
+   Mobile (≤ 768px)
+-------------------------------- */
+@media (max-width: 768px) {
+  .home-img img {
+    width: 220px;
+  }
+
+  .home-content h1 {
+    font-size: 2rem;
+  }
+
+  .home-content h3 {
+    font-size: 1.4rem;
+  }
+
+  .home-content p {
+    font-size: 1.1rem;
+  }
+
+  .btn,
+  .all-project-btn {
+    font-size: 1.1rem;
+    padding: 0.5rem 1.3rem;
+  }
+}
+
+/* -------------------------------
+   Extra Small Devices (≤ 480px)
+-------------------------------- */
+@media (max-width: 480px) {
+  .home-img img {
+    width: 200px;
+  }
+
+  .home-content h1 {
+    font-size: 1.9rem;
+  }
+
+  .home-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .home-content p {
+    font-size: 1.05rem;
+  }
+
+  .btn,
+  .all-project-btn,
+  .all-services-btn {
+    font-size: 1rem;
+    padding: 0.5rem 1.2rem;
+  }
+
+  .myexpert-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-box h3 {
+    font-size: 1.8rem;
+  }
+
+  .service-box p {
+    font-size: 1.3rem;
+  }
+
+  .recent-project-layer h4 {
+    font-size: 2rem;
+  }
+
+  .recent-project-layer p {
+    font-size: 1.3rem;
+  }
+}

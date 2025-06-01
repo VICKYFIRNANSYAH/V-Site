@@ -4,134 +4,394 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Personal Portfolio Website Design | Codehal</title>
+    <title>Landing Page | Vicky Firnansyah</title>
 
     <!-- box icons by awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
     <!-- custom css -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/home.css" />
+    <link rel="stylesheet" href="assets/css/gradient.css" />
+    <link rel="stylesheet" href="assets/css/responsive/responsive_home.css" />
+
+    <!-- custom js -->
+    <script src="assets/js/cursorParticles.js" defer></script>
   </head>
-
   <body>
-
-
-
     <!-- header design -->
-     <header class="header">
-     <a href="#" class="logo">
-      <img src="images/logo.png" alt="Logo" />
-     </a>
+    <!-- Header -->
+    <header class="header">
+      <a href="#" class="logo"><img src="assets/img/logo.png" alt="Logo" /></a>
+      <i class="fas fa-bars" id="menu-icon"></i>
 
-     <i class='fas fa-bars' id="menu-icon"></i>
+      <!-- Navbar untuk desktop -->
+      <nav class="navbar" id="navbar">
+        <a href="/index.html" class="active nav-link"
+          ><i class="fas fa-house"></i>HOME</a
+        >
+        <a href="/comingsoon/comingsoon.html" class="nav-link"
+          ><i class="fas fa-user"></i>ABOUT</a
+        >
+        <a href="/comingsoon/comingsoon.html" class="nav-link"
+          ><i class="fas fa-layer-group"></i>SERVICES</a
+        >
+        <a href="/comingsoon/comingsoon.html" class="nav-link"
+          ><i class="fas fa-folder-open"></i>WORKS</a
+        >
+        <a href="/comingsoon/comingsoon.html" class="nav-link"
+          ><i class="fas fa-store"></i>STORE</a
+        >
+        <a href="/comingsoon/comingsoon.html" class="nav-link"
+          ><i class="fas fa-comment-dots"></i>CONTACT</a
+        >
+      </nav>
 
-     <nav class="navbar">
-        <a href="#home" class="active" >Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#portofolio">Portofolio</a>
-        <a href="#contact">Contact</a>
-     </nav>
+      <i class="fas fa-moon" id="darkMode-icon"></i>
+      <div class="auth-buttons">
+        <a href="/comingsoon/comingsoon.html" class="btn register-btn"
+          >REGISTER</a
+        >
+      </div>
     </header>
- 
 
-
-    <!-- home section design -->
- <section class="home" id="home">
-  <div class="home-content">
-    <h3>Hello, It's Me</h3>
-    <h1 class="heading">Muhammad Vicky Firnansyah</h1>
-    <h3>And I'm a <span class="multiple-text"></span></h3>
-
-    <div class="social-media">
-      <a href="https://vickyfirnansyah.github.io/vickyfirnansyah/" title="Website"><i class="fas fa-globe"></i></a>
-      <a href="https://www.facebook.com/vicky.firnansyah" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://www.instagram.com/firnansyah15/" title="Instagram"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.linkedin.com/in/vicky-firnansyah-660436325/" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-      <a href="https://github.com/VICKYFIRNANSYAH" title="GitHub"><i class="fab fa-github"></i></a>
-    </div>
-
-    <div class="button-group">
-      <a href="#" class="btn btn-solid">Order Now</a>
-      <a href="#" class="btn btn-outline">Contact Us</a>
-    </div>
-  </div>
-
-  <div class="home-img">
-    <img src="images/foto-home.png" alt="">
-  </div>
-</section>
-
-
-
-    <!-- about section design -->
-    <section class="about" id="about">
-      <div class="about-img">
-        <img src="images/foto-about.png" alt="About Image">
+    <!-- Sidebar untuk mobile -->
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <a href="#" class="logo"
+          ><img src="assets/img/logo.png" alt="Logo"
+        /></a>
       </div>
 
-      <div class="about-content">
-        <h2 class="heading">About <span>Me</span></h2>
-        <h3>Web Developer</h3>
-        <p>I am a Web Developer,Front Developer, Software Engineer, and Graphic Designer with a keen interest in creating functional and aesthetic digital solutions. Experienced in building responsive websites, designing attractive interfaces, and developing efficient and scalable software. I am always enthusiastic about combining logic and creativity to produce impactful digital works.</p>
-        <a href="#" class="btn">Read More</a>
-     </div>
+      <a href="/index.html" class="nav-link">HOME</a>
+      <a href="/comingsoon/comingsoon.html" class="nav-link">ABOUT</a>
+      <a href="/comingsoon/comingsoon.html" class="nav-link">SERVICES</a>
+      <a href="/comingsoon/comingsoon.html" class="nav-link">WORKS</a>
+      <a href="/comingsoon/comingsoon.html" class="nav-link">STORE</a>
+      <a href="/comingsoon/comingsoon.html" class="nav-link">CONTACT</a>
+
+      <div class="sidebar-footer">
+        <a href="/comingsoon/comingsoon.html" class="btn register-btn"
+          >REGISTER</a
+        >
+      </div>
+      <div class="dark-toggle-sidebar">
+        <i id="darkMode-icon-sidebar" class="fas fa-moon"></i>
+        <span id="darkMode-label">Dark Mode</span>
+      </div>
+    </div>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1 class="heading">Muhammad Vicky Firnansyah</h1>
+        <h3>And I'm a <span class="multiple-text"></span></h3>
+        <p>
+          Creating modern, efficient and powerful digital solutions through
+          design and technology.
+        </p>
+
+        <div class="social-media">
+          <a
+            href="https://vickyfirnansyah.github.io/vickyfirnansyah/"
+            title="Website"
+            ><i class="fas fa-globe"></i
+          ></a>
+          <a href="https://www.facebook.com/vicky.firnansyah" title="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://www.instagram.com/firnansyah15/" title="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/vicky-firnansyah-660436325/"
+            title="LinkedIn"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="https://github.com/VICKYFIRNANSYAH" title="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+
+        <div class="button-group">
+          <a href="/comingsoon/comingsoon.html" class="btn btn-solid"
+            >Order Now</a
+          >
+          <a href="/comingsoon/comingsoon.html" class="btn btn-outline"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+
+      <div class="home-img">
+        <img src="assets/img/foto-home.png" alt="" />
+      </div>
     </section>
-
-
 
     <!-- services section design -->
     <section class="services" id="services">
-      <h2 class="heading">Our <span>Services</span></h2>
+      <h2 class="heading">OUR <span>SERVICES</span></h2>
+
+      <div class="all-services-wrapper">
+        <a href="/comingsoon/comingsoon.html" class="all-services-btn">
+          All Services <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
 
       <div class="services-container">
         <div class="service-box">
           <i class="fas fa-pencil-ruler"></i>
           <h3>Graphic Designer</h3>
-          <p>Creating compelling visuals, brand identities, and user interfaces that communicate ideas clearly and creatively.</p>
-          <a href="#" class="btn">Read More</a>
+          <p>
+            Creating compelling visuals, brand identities, and user interfaces
+            that communicate ideas clearly and creatively.
+          </p>
         </div>
 
         <div class="service-box">
           <i class="fas fa-code"></i>
           <h3>Web Development</h3>
-          <p>Building responsive, modern websites and web applications with clean code and optimal performance.v</p>
-          <a href="#" class="btn">Read More</a>
+          <p>
+            Building responsive, modern websites and web applications with clean
+            code and optimal performance.
+          </p>
         </div>
 
         <div class="service-box">
           <i class="fas fa-laptop-code"></i>
           <h3>Software Engineer</h3>
-         <p>Designing and developing scalable software solutions with clean architecture and efficient code.</p>
-         <a href="#" class="btn">Read More</a>
+          <p>
+            Designing and developing scalable software solutions with clean
+            architecture and efficient code.
+          </p>
         </div>
       </div>
     </section>
 
+    <!-- Recent Projects Section -->
+    <section class="recent-project" id="projects">
+      <h2 class="heading">RECENT <span>PROJECTS</span></h2>
 
+      <div class="all-projects-wrapper">
+        <a href="/comingsoon/comingsoon.html" class="all-projects-btn">
+          All Projects <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
 
-    <!-- contact section design -->
-    <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>Me!</span></h2>
-
-      <form action="#">
-        <div class="input-box">
-          <input type="text" placeholder="Full Name">
-          <input type="email" placeholder="Email Address">
+      <div class="recent-project-container">
+        <div class="recent-project-box">
+          <img src="/assets/img/project1.jpg" alt="Project 1" />
+          <div class="recent-project-layer">
+            <h4>Project One</h4>
+            <p>
+              A modern web app built with clean architecture and responsive
+              design.
+            </p>
+            <a href="/comingsoon/comingsoon.html"
+              ><i class="fas fa-external-link-alt"></i
+            ></a>
+          </div>
         </div>
-        <div class="input-box">
-          <input type="number" placeholder="Mobile Number">
-          <input type="text" placeholder="Email Subject">
+
+        <div class="recent-project-box">
+          <img src="/assets/img/project2.jpg" alt="Project 2" />
+          <div class="recent-project-layer">
+            <h4>Project Two</h4>
+            <p>Creative branding and UI/UX for a startup platform.</p>
+            <a href="/comingsoon/comingsoon.html"
+              ><i class="fas fa-external-link-alt"></i
+            ></a>
+          </div>
         </div>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-        <input type="submit" value="Send Message" class="btn">
-      </form>
-      </section>
 
+        <div class="recent-project-box">
+          <img src="/assets/img/project3.jpg" alt="Project 3" />
+          <div class="recent-project-layer">
+            <h4>Project Three</h4>
+            <p>End-to-end software solution for e-commerce logistics.</p>
+            <a href="/comingsoon/comingsoon.html"
+              ><i class="fas fa-external-link-alt"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- My Expert (Language and Tools Area) -->
+    <section class="myexpert" id="myexpert">
+      <h2 class="heading"><span>LANGUAGE</span> AND <span>TOOLS</span></h2>
+
+      <div class="myexpert-container">
+        <!-- AWS -->
+        <div class="myexpert-box">
+          <img src="assets/img/icon/aws.svg" alt="AWS" />
+          <h3>AWS</h3>
+        </div>
+
+        <!-- Arduino -->
+        <div class="myexpert-box">
+          <img src="assets/img/icon/arduino.svg" alt="Arduino" />
+          <h3>Arduino</h3>
+        </div>
+
+        <!-- Bootstrap -->
+        <div class="myexpert-box">
+          <img src="assets/img/icon/bootstrap.svg" alt="Bootstrap" />
+          <h3>Bootstrap</h3>
+        </div>
+
+        <!-- Firebase -->
+        <div class="myexpert-box">
+          <img src="assets/img/icon/firebase.svg" alt="Firebase" />
+          <h3>Firebase</h3>
+        </div>
+
+        <!-- Visual Studio Code -->
+        <div class="myexpert-box">
+          <img src="assets/img/icon/vscode.svg" alt="VSCode" />
+          <h3>VSCode</h3>
+        </div>
+
+        <!-- WordPress -->
+        <div class="myexpert-box">
+          <img src="assets/img/icon/wordpress.svg" alt="WordPress" />
+          <h3>WordPress</h3>
+        </div>
+
+        <!-- Linux -->
+        <div class="myexpert-box">
+          <img src="assets/img/icon/linux.svg" alt="Linux" />
+          <h3>Linux</h3>
+        </div>
+
+        <!-- Java -->
+        <div class="myexpert-box">
+          <img src="assets/img/icon/java.svg" alt="Java" />
+          <h3>Java</h3>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="myexpert-box">
+          <img src="assets/img/icon/javascript.svg" alt="JavaScript" />
+          <h3>JavaScript</h3>
+        </div>
+
+        <!-- Python -->
+        <div class="myexpert-box">
+          <img src="assets/img/icon/python.svg" alt="Python" />
+          <h3>Python</h3>
+        </div>
+
+        <!-- PHP -->
+        <div class="myexpert-box">
+          <img src="assets/img/icon/php.svg" alt="PHP" />
+          <h3>PHP</h3>
+        </div>
+
+        <!-- C -->
+        <div class="myexpert-box">
+          <img src="assets/img/icon/clanguage.svg" alt="C" />
+          <h3>C</h3>
+        </div>
+
+        <!-- C++ -->
+        <div class="myexpert-box">
+          <img src="assets/img/icon/cpp.svg" alt="C++" />
+          <h3>C++</h3>
+        </div>
+
+        <!-- C# -->
+        <div class="myexpert-box">
+          <img src="assets/img/icon/csharp.svg" alt="C#" />
+          <h3>C#</h3>
+        </div>
+
+        <!-- HTML5 -->
+        <div class="myexpert-box">
+          <img src="assets/img/icon/html5.svg" alt="HTML5" />
+          <h3>HTML5</h3>
+        </div>
+
+        <!-- CSS3 -->
+        <div class="myexpert-box">
+          <img src="assets/img/icon/css3.svg" alt="CSS3" />
+          <h3>CSS3</h3>
+        </div>
+
+        <!-- React -->
+        <div class="myexpert-box">
+          <img src="assets/img/icon/react.svg" alt="React" />
+          <h3>React</h3>
+        </div>
+
+        <!-- Tailwind CSS -->
+        <div class="myexpert-box">
+          <img src="assets/img/icon/tailwind.svg" alt="Tailwind CSS" />
+          <h3>Tailwind</h3>
+        </div>
+
+        <!-- Figma -->
+        <div class="myexpert-box">
+          <img src="assets/img/icon/figma.svg" alt="Figma" />
+          <h3>Figma</h3>
+        </div>
+
+        <!-- Adobe Photoshop -->
+        <div class="myexpert-box">
+          <img src="assets/img/icon/photoshop.svg" alt="Photoshop" />
+          <h3>Photoshop</h3>
+        </div>
+
+        <!-- Adobe Illustrator -->
+        <div class="myexpert-box">
+          <img src="assets/img/icon/illustrator.svg" alt="Illustrator" />
+          <h3>Illustrator</h3>
+        </div>
+
+        <!-- After Effects -->
+        <div class="myexpert-box">
+          <img src="assets/img/icon/aftereffects.svg" alt="After Effects" />
+          <h3>After Effects</h3>
+        </div>
+
+        <!-- Premiere Pro -->
+        <div class="myexpert-box">
+          <img src="assets/img/icon/premiere.svg" alt="Premiere Pro" />
+          <h3>Premiere Pro</h3>
+        </div>
+
+        <!-- Davinci Resolve -->
+        <div class="myexpert-box">
+          <img src="assets/img/icon/davinciresolve.svg" alt="Davinci Resolve" />
+          <h3>Davinci Resolve</h3>
+        </div>
+
+        <!-- Blender -->
+        <div class="myexpert-box">
+          <img src="assets/img/icon/blender.svg" alt="Blender" />
+          <h3>Blender</h3>
+        </div>
+
+        <!-- Canva -->
+        <div class="myexpert-box">
+          <img src="assets/img/icon/canva.svg" alt="Canva" />
+          <h3>Canva</h3>
+        </div>
+
+        <!-- Ibis Paint X -->
+        <div class="myexpert-box">
+          <img src="assets/img/icon/ibispaintx.svg" alt="Ibis Paint X" />
+          <h3>Ibis Paint X</h3>
+        </div>
+      </div>
+    </section>
 
     <!-- footer design -->
-     <footer class="footer">
+    <footer class="footer">
       <div class="footer-text">
         <p>Copyright &copy; 2025 by VickyFirnansyah | All Rights Reserved.</p>
       </div>
@@ -139,7 +399,7 @@
       <div class="footer-iconTop">
         <a href="#home"><i class="fas fa-arrow-up"></i></a>
       </div>
-     </footer>
+    </footer>
 
     <!-- scroll reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -148,6 +408,7 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <!-- custom js -->
-    <script src="script.js"></script>
+    <script src="assets/js/darkmode.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
