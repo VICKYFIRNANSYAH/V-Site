@@ -21,6 +21,7 @@
   background: var(--main-color);
   color: var(--bg-color);
 }
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;

@@ -1,0 +1,217 @@
+/* ============================================================================
+   RESPONSIVE STYLES - Mobile & Tablet Only (Tidak mengubah tampilan Desktop)
+============================================================================ */
+
+/* -------------------------------
+   Tablet (≤ 1024px)
+-------------------------------- */
+@media (max-width: 1024px) {
+  .about {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .about-img img {
+    width: 80vw;
+  }
+
+  .about-content h2,
+  .about-content h3,
+  .about-content p {
+    text-align: center;
+  }
+
+  .testimonials .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 80%;
+  }
+
+  .connect {
+    padding: 2rem 1rem;
+    margin-bottom: -10rem;
+  }
+
+  .cta {
+    padding: 2rem 1rem;
+  }
+}
+
+/* -------------------------------
+   Mobile (≤ 768px)
+-------------------------------- */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .about-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .about-img img {
+    width: 60vw;
+    max-width: 250px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: none;
+    margin-top: 5rem;
+  }
+
+  .heading {
+    font-size: 3rem;
+  }
+
+  .about-content {
+    width: 90vw;
+    max-width: 500px;
+  }
+
+  .about-content h2 {
+    font-size: 2rem;
+  }
+
+  .about-content h3 {
+    font-size: 1.8rem;
+  }
+
+  .about-content p {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  .btn {
+    margin-top: 1.5rem;
+  }
+
+  .technology h2,
+  .testimonials h2,
+  .connect h2,
+  .cta h2 {
+    font-size: 2.2rem;
+  }
+
+  .technology p,
+  .connect p,
+  .cta p {
+    font-size: 1.4rem;
+  }
+
+  .tech-logos {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    padding: 1rem;
+  }
+
+  .card {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .card img {
+    margin-bottom: 1rem;
+  }
+
+  .connect {
+    margin-bottom: -5rem;
+  }
+
+  .btn,
+  .eskplore-btn {
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+  }
+
+  .social-media {
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-bottom: 0rem;
+  }
+
+  .social-media a {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+/* -------------------------------
+   Extra Small Devices (≤ 480px)
+-------------------------------- */
+@media (max-width: 480px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .about-img img {
+    width: 80vw;
+    max-width: 220px;
+    margin-top: 3rem;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .about-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .about-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  .tech-logos {
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    padding: 1rem;
+  }
+
+  .social-media {
+    gap: 0.6rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .social-media a {
+    width: 2.3rem;
+    height: 2.3rem;
+    font-size: 1rem;
+  }
+
+  .btn,
+  .eskplore-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .cta h2 {
+    font-size: 2rem;
+  }
+
+  .cta p {
+    font-size: 1.3rem;
+  }
+
+  .connect {
+    margin-bottom: -3rem;
+  }
+}

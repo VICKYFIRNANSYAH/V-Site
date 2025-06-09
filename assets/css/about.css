@@ -1,0 +1,218 @@
+/*<--about section design -->*/
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.heading {
+  text-align: center;
+  color: var(--main-color);
+  font-size: 4.5rem;
+}
+
+.about-content h2 {
+  text-align: left;
+  line-height: 1.2;
+}
+
+.about-content h3 {
+  font-size: 2.6rem;
+}
+
+.about-content p {
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem;
+  text-align: justify;
+}
+
+.about-img img {
+  width: 150vw;
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.about-img img:hover {
+  transform: scale(1.05);
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  border-radius: 4rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+  box-shadow: none;
+}
+
+.btn-outline:hover {
+  background: var(--main-color);
+  color: var(--second-bg-color);
+  box-shadow: 0 0 1rem var(--main-color);
+}
+
+/*<--Main Section Design -->*/
+main {
+  text-align: center;
+  padding: 2rem;
+}
+
+/*<--Our Technology Section Design -->*/
+.technology h2 {
+  color: var(--main-color);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.technology p {
+  font-size: 1.5rem;
+}
+
+.tech-logos {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  background: var(--second-bg-color);
+  padding: 1.5rem;
+  gap: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.tech-logos div {
+  text-align: center;
+}
+
+.tech-logos img {
+  height: 50px;
+}
+
+/*<--Testimonial Section Design -->*/
+.testimonials h2 {
+  color: var(--main-color);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.testimonials .cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.card {
+  background: var(--second-bg-color);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin: 1rem;
+  max-width: 300px;
+  text-align: left;
+  display: flex;
+  gap: 1rem;
+}
+
+.card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/*<--Connect Section Design -->*/
+.connect {
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: -30rem;
+  text-align: center;
+}
+
+.connect h2 {
+  color: var(--main-color);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.connect p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0;
+}
+
+.social-media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  background: transparent;
+  border: 2px solid var(--main-color);
+  border-radius: 50%;
+  font-size: 1.4rem;
+  color: var(--main-color);
+  transition: 0.3s ease;
+}
+
+.social-media a:hover {
+  background: var(--main-color);
+  color: var(--second-bg-color);
+  box-shadow: 0 0 0.5rem var(--main-color);
+}
+
+/*<--Started Section Design -->*/
+.cta {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.cta h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.cta p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.cta a {
+  font-size: 1.5rem;
+}
+.eskplore-btn {
+  padding: 1.5rem 4rem;
+  background: linear-gradient(to right, #9b4dff, #712bda);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.eskplore-btn:hover {
+  background: linear-gradient(to right, #712bda, #9b4dff);
+}

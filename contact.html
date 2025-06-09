@@ -13,54 +13,124 @@
     />
 
     <!-- custom css -->
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
+    <link rel="stylesheet" href="assets/css/gradient.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/responsive/responsive_contact.css"
+    />
+
+    <!-- custom js -->
+    <script src="assets/js/cursorParticles.js" defer></script>
   </head>
   <body>
     <!-- header design -->
+    <!-- Header -->
     <header class="header">
-      <a href="#" class="logo">
-        <img src="images/logo.png" alt="Logo" />
-      </a>
-
+      <a href="#" class="logo"><img src="assets/img/logo.png" alt="Logo" /></a>
       <i class="fas fa-bars" id="menu-icon"></i>
 
-      <nav class="navbar">
-        <a href="/index.html" class="active">Home</a>
-        <a href="/about.html">About</a>
-        <a href="/comingsoon/comingsoon.html">Store</a>
-        <a href="/service.html">Services</a>
-        <a href="/works.html">Works</a>
-        <a href="/contact.html">Contact</a>
+      <!-- Navbar untuk desktop -->
+      <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-link"
+          ><i class="fas fa-house"></i>HOME</a
+        >
+        <a href="about.html" class="nav-link"
+          ><i class="fas fa-user"></i>ABOUT</a
+        >
+        <a href="comingsoon.html" class="nav-link"
+          ><i class="fas fa-layer-group"></i>SERVICES</a
+        >
+        <a href="comingsoon.html" class="nav-link"
+          ><i class="fas fa-folder-open"></i>WORKS</a
+        >
+        <a href="comingsoon.html" class="nav-link"
+          ><i class="fas fa-store"></i>STORE</a
+        >
+        <a href="contact.html" class="active nav-link"
+          ><i class="fas fa-comment-dots"></i>CONTACT</a
+        >
       </nav>
+
       <i class="fas fa-moon" id="darkMode-icon"></i>
       <div class="auth-buttons">
-        <button class="btn login-btn" id="show-login">Login</button>
-        <button class="btn signup-btn" id="show-signup">Sign Up</button>
+        <a href="comingsoon.html" class="btn register-btn">REGISTER</a>
       </div>
     </header>
+
+    <!-- Sidebar untuk mobile -->
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <a href="#" class="logo"
+          ><img src="assets/img/logo.png" alt="Logo"
+        /></a>
+      </div>
+
+      <a href="index.html" class="nav-link">HOME</a>
+      <a href="about.html" class="nav-link">ABOUT</a>
+      <a href="comingsoon.html" class="nav-link">SERVICES</a>
+      <a href="comingsoon.html" class="nav-link">WORKS</a>
+      <a href="comingsoon.html" class="nav-link">STORE</a>
+      <a href="contact.html" class="active nav-link">CONTACT</a>
+
+      <div class="sidebar-footer">
+        <a href="comingsoon.html" class="btn register-btn">REGISTER</a>
+      </div>
+      <div class="dark-toggle-sidebar">
+        <i id="darkMode-icon-sidebar" class="fas fa-moon"></i>
+        <span id="darkMode-label">Dark Mode</span>
+      </div>
+    </div>
 
     <!-- contact section design -->
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me!</span></h2>
 
-      <form action="#">
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        onsubmit="document.getElementById('success-msg').style.display='block'"
+      >
+        <!-- Netlify requirement -->
+        <input type="hidden" name="form-name" value="contact" />
+        <p hidden>
+          <label>Jangan isi ini: <input name="bot-field" /></label>
+        </p>
+
         <div class="input-box">
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="Email Address" />
+          <input type="text" name="name" placeholder="Full Name" required />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required
+          />
         </div>
         <div class="input-box">
-          <input type="number" placeholder="Mobile Number" />
-          <input type="text" placeholder="Email Subject" />
+          <input type="tel" name="phone" placeholder="Mobile Number" />
         </div>
         <textarea
-          name=""
-          id=""
+          name="message"
           cols="30"
           rows="10"
           placeholder="Your Message"
+          required
         ></textarea>
         <input type="submit" value="Send Message" class="btn" />
+        <p
+          id="success-msg"
+          style="
+            color: green;
+            display: none;
+            text-align: center;
+            margin-top: 10px;
+          "
+        >
+          Pesan berhasil dikirim!
+        </p>
       </form>
     </section>
 
@@ -82,6 +152,7 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <!-- custom js -->
-    <script src="script.js"></script>
+    <script src="assets/js/darkmode.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

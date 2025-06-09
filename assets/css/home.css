@@ -123,7 +123,6 @@ span {
 
 /* Services Section */
 .services {
-  background: var(--bg-color);
   padding: 10rem 9% 2rem;
 }
 
@@ -217,7 +216,6 @@ span {
 
 /* Recent Projects Section */
 .recent-project {
-  background: var(--bg-color);
   padding: 10rem 9% 2rem;
 }
 
@@ -339,7 +337,6 @@ span {
 
 /* My Expert Section */
 .myexpert {
-  background: var(--bg-color);
   padding: 6rem 5% 2rem;
 }
 
