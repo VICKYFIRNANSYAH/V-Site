@@ -1,40 +1,170 @@
-/*<!-- contact section design -->*/
-.contact h2 {
+.contact {
+  margin-top: 5rem;
+  padding: 10rem 2rem 4rem 2rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact h2.heading {
+  text-align: center;
+  font-size: 2.5rem;
   margin-bottom: 3rem;
+}
+
+.contact h2 span {
+  color: #0d6efd;
 }
 
 .contact form {
   max-width: 70rem;
-  margin: 1rem auto;
+  margin: 1rem auto 3rem;
   text-align: center;
-  margin-bottom: 3rem;
 }
 
 .contact form .input-box {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.contact form .input-box input,
-.contact form textarea {
+  flex-direction: column;
+  gap: 1.5rem;
   width: 100%;
-  padding: 1.5rem;
+}
+
+.input-field {
+  position: relative;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.input-field.full {
+  margin-top: 1rem;
+}
+
+/* Input dan Textarea */
+.input-field input,
+.input-field textarea {
+  width: 100%;
+  padding: 2rem 1.5rem 0.8rem;
   font-size: 1.6rem;
-  color: var(--text-color);
-  background: var(--second-bg-color);
+  color: var(--text-color, #000);
+  background: var(--second-bg-color, #f8f8f8);
   border-radius: 0.8rem;
-  margin: 0.7rem 0;
+  border: 2px solid #ccc;
+  outline: none;
+  box-sizing: border-box;
+  transition: border 0.3s ease, background-color 0.3s ease;
 }
 
-.contact form .input-box input {
-  width: 49%;
+/* Fokus */
+.input-field input:focus,
+.input-field textarea:focus {
+  border-color: #0d6efd;
+  background-color: #fff;
+  color: #000;
 }
-.contact form textarea {
+
+/* Label Mengambang */
+.input-field label {
+  position: absolute;
+  top: 1.3rem;
+  left: 1.5rem;
+  font-size: 1.4rem;
+  color: #777;
+  pointer-events: none;
+  background-color: transparent; /* jadi transparan awalnya */
+  padding: 0 0.4rem;
+  display: inline-block;
+  transition: 0.2s ease all;
+}
+
+/* Floating label aktif */
+.input-field input:focus + label,
+.input-field input:not(:placeholder-shown) + label,
+.input-field textarea:focus + label,
+.input-field textarea:not(:placeholder-shown) + label {
+  top: -0.8rem;
+  font-size: 1.2rem;
+  color: #0d6efd;
+  background-color: #fff;
+}
+
+/* Textarea */
+textarea {
   resize: none;
+  height: 150px;
 }
 
-.contact form .btn {
+/* Button */
+.contact-btn {
   margin-top: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 0.8rem;
   cursor: pointer;
+  position: relative;
+}
+
+.contact-btn:hover {
+  background-color: #0b5ed7;
+}
+
+/* Loader Spinner */
+.loader {
+  display: none;
+  width: 18px;
+  height: 18px;
+  border: 3px solid #fff;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  margin-left: 10px;
+  vertical-align: middle;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Success message */
+#success-msg {
+  color: green;
+  display: none;
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+
+/* Error message */
+.input-field .error-msg {
+  font-size: 1.2rem;
+  color: red;
+  display: none;
+  margin-top: 0.3rem;
+  text-align: left;
+}
+
+/* Shake animation */
+.shake {
+  animation: shake 0.3s ease-in-out;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }

@@ -84,53 +84,86 @@
     </div>
 
     <!-- contact section design -->
-    <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>Me!</span></h2>
-
-      <form
-        name="contact"
-        method="POST"
-        data-netlify="true"
-        netlify-honeypot="bot-field"
-        onsubmit="document.getElementById('success-msg').style.display='block'"
-      >
-        <!-- Netlify requirement -->
-        <input type="hidden" name="form-name" value="contact" />
-        <p hidden>
-          <label>Jangan isi ini: <input name="bot-field" /></label>
-        </p>
+    <section class="contact">
+      <h2 class="heading"><span>CONTACT</span> US</h2>
+      <form id="contact-form" novalidate>
+        <!-- Honeypot anti-bot -->
+        <input
+          type="text"
+          name="_gotcha"
+          style="display: none"
+          tabindex="-1"
+          autocomplete="off"
+        />
 
         <div class="input-box">
-          <input type="text" name="name" placeholder="Full Name" required />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email Address"
+          <div class="input-field">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+              pattern="^[\p{L}\s]+$"
+              placeholder=" "
+              aria-label="Full Name"
+              autocomplete="name"
+            />
+            <label for="name">Full Name (hanya huruf)</label>
+            <small class="error-msg">Nama tidak boleh berisi angka.</small>
+          </div>
+          <div class="input-field">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder=" "
+              aria-label="Email Address"
+              autocomplete="email"
+            />
+            <label for="email">Email Address</label>
+            <small class="error-msg">Masukkan email yang valid.</small>
+          </div>
+        </div>
+
+        <div class="input-box">
+          <div class="input-field">
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              pattern="^[0-9]{10,15}$"
+              placeholder=" "
+              aria-label="Mobile Number"
+              autocomplete="tel"
+            />
+            <label for="phone">Mobile Number</label>
+            <small class="error-msg">Nomor HP 10–15 digit.</small>
+          </div>
+        </div>
+
+        <div class="input-field full">
+          <textarea
+            name="message"
+            id="message"
             required
-          />
+            placeholder=" "
+            aria-label="Message"
+          ></textarea>
+          <label for="message">Your Message</label>
+          <small class="error-msg">Pesan tidak boleh kosong.</small>
         </div>
-        <div class="input-box">
-          <input type="tel" name="phone" placeholder="Mobile Number" />
-        </div>
-        <textarea
-          name="message"
-          cols="30"
-          rows="10"
-          placeholder="Your Message"
-          required
-        ></textarea>
-        <input type="submit" value="Send Message" class="btn" />
-        <p
-          id="success-msg"
-          style="
-            color: green;
-            display: none;
-            text-align: center;
-            margin-top: 10px;
-          "
-        >
-          Pesan berhasil dikirim!
-        </p>
+
+        <button type="submit" class="contact-btn" id="submit-btn">
+          <span id="btn-text">Send Message</span>
+          <span
+            class="loader"
+            id="loader"
+            role="status"
+            aria-label="Loading..."
+          ></span>
+        </button>
+        <p id="success-msg">✅ Pesan berhasil dikirim!</p>
       </form>
     </section>
 
@@ -153,6 +186,7 @@
 
     <!-- custom js -->
     <script src="assets/js/darkmode.js"></script>
+    <script src="assets/js/contact.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
