@@ -1,0 +1,122 @@
+/* Recent Projects Section */
+.recent-project {
+  padding: 10rem 9% 2rem;
+}
+
+.recent-project h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.recent-project .heading span {
+  color: var(--main-color);
+}
+
+/* All Projects Button */
+.all-projects-wrapper {
+  text-align: right;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.all-projects-btn {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--main-color);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  border: 2px solid var(--main-color);
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.all-projects-btn i {
+  transition: transform 0.3s ease;
+}
+
+.all-projects-btn:hover {
+  background-color: var(--main-color);
+  color: var(--second-bg-color);
+  box-shadow: 0 0 10px var(--main-color);
+}
+
+.all-projects-btn:hover i {
+  transform: translateX(6px);
+}
+
+/* Project Grid */
+.recent-project-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+}
+
+/* Project Card */
+.recent-project-container .recent-project-box {
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem var(--bg-color);
+  overflow: hidden;
+  display: flex;
+}
+
+/* Project Image */
+.recent-project-box img {
+  width: 100%;
+  height: 200px; /* Tetapkan tinggi tetap */
+  object-fit: cover; /* Menjaga gambar proporsional, tanpa distorsi */
+  transition: transform 0.5s ease;
+}
+
+.recent-project-box:hover img {
+  transform: scale(1.1);
+}
+
+/* Hover Overlay */
+.recent-project-box .recent-project-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 1), var(--main-color));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0.4rem;
+  transform: translateY(100%);
+  transition: transform 0.5s ease;
+}
+
+.recent-project-box:hover .recent-project-layer {
+  transform: translateY(0);
+}
+
+.recent-project-layer h4 {
+  font-size: 3rem;
+}
+
+.recent-project-layer p {
+  font-size: 1.6rem;
+  margin: 3rem 0 1rem;
+  color: var(--second-bg-color);
+}
+
+.recent-project-layer a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background: var(--text-color);
+  border-radius: 50%;
+  color: var(--second-bg-color);
+  font-size: 2rem;
+}

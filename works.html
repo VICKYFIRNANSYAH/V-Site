@@ -13,35 +13,132 @@
     />
 
     <!-- custom css -->
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/work.css" />
+    <link rel="stylesheet" href="assets/css/gradient.css" />
+    <link rel="stylesheet" href="assets/css/responsive/responsive_work.css" />
+
+    <!-- custom js -->
+    <script src="assets/js/cursorParticles.js" defer></script>
   </head>
   <body>
     <!-- header design -->
+    <!-- Header -->
     <header class="header">
-      <a href="#" class="logo">
-        <img src="images/logo.png" alt="Logo" />
-      </a>
-
+      <a href="#" class="logo"><img src="assets/img/logo.png" alt="Logo" /></a>
       <i class="fas fa-bars" id="menu-icon"></i>
 
-      <nav class="navbar">
-        <a href="/index.html" class="active">Home</a>
-        <a href="/about.html">About</a>
-        <a href="/comingsoon/comingsoon.html">Store</a>
-        <a href="/service.html">Services</a>
-        <a href="/works.html">Works</a>
-        <a href="/contact.html">Contact</a>
+      <!-- Navbar untuk desktop -->
+      <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-link"
+          ><i class="fas fa-house"></i>HOME</a
+        >
+        <a href="about.html" class="nav-link"
+          ><i class="fas fa-user"></i>ABOUT</a
+        >
+        <a href="achievement.html" class="nav-link"
+          ><i class="fa-solid fa-medal"></i>ACHIEVEMENT</a
+        >
+        <a href="comingsoon.html" class="nav-link"
+          ><i class="fas fa-layer-group"></i>SERVICES</a
+        >
+        <a href="works.html" class="active nav-link"
+          ><i class="fas fa-folder-open"></i>WORKS</a
+        >
+        <a href="comingsoon.html" class="nav-link"
+          ><i class="fas fa-store"></i>STORE</a
+        >
+        <a href="contact.html" class="nav-link"
+          ><i class="fas fa-comment-dots"></i>CONTACT</a
+        >
       </nav>
+
       <i class="fas fa-moon" id="darkMode-icon"></i>
       <div class="auth-buttons">
-        <button class="btn login-btn" id="show-login">Login</button>
-        <button class="btn signup-btn" id="show-signup">Sign Up</button>
+        <a href="comingsoon.html" class="btn register-btn">REGISTER</a>
       </div>
     </header>
 
-    <!-- about section design -->
-    <section></section>
+    <!-- Sidebar untuk mobile -->
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <a href="#" class="logo"
+          ><img src="assets/img/logo.png" alt="Logo"
+        /></a>
+      </div>
+
+      <a href="index.html" class="nav-link">HOME</a>
+      <a href="about.html" class="nav-link">ABOUT</a>
+      <a href="achievement.html" class="nav-link">ACHIEVEMENT</a>
+      <a href="comingsoon.html" class="nav-link">SERVICES</a>
+      <a href="works.html" class="active nav-link">WORKS</a>
+      <a href="comingsoon.html" class="nav-link">STORE</a>
+      <a href="contact.html" class="nav-link">CONTACT</a>
+
+      <div class="sidebar-footer">
+        <a href="comingsoon.html" class="btn register-btn">REGISTER</a>
+      </div>
+      <div class="dark-toggle-sidebar">
+        <i id="darkMode-icon-sidebar" class="fas fa-moon"></i>
+        <span id="darkMode-label">Dark Mode</span>
+      </div>
+    </div>
+
+    <!-- Recent Projects Section -->
+    <section class="recent-project" id="projects">
+      <h2 class="heading">RECENT <span>PROJECTS</span></h2>
+
+      <div class="recent-project-container">
+        <div class="recent-project-box">
+          <img
+            src="assets/img/project/game flappy birds.png"
+            alt="Flappy Bird"
+          />
+          <div class="recent-project-layer">
+            <h4>Flappy Bird</h4>
+            <p>
+              A simple JavaScript based game where the player controls a bird to
+              avoid obstacles.
+            </p>
+            <a href="https://vickyfirnansyah.github.io/Game-Flappy-Bird/"
+              ><i class="fas fa-external-link-alt"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="recent-project-box">
+          <img
+            src="assets/img/project/web e-commerce.png"
+            alt="E-Commerce Website"
+          />
+          <div class="recent-project-layer">
+            <h4>E-Commerce Web</h4>
+            <p>
+              Responsive online store website design with category, search, and
+              shopping cart features.
+            </p>
+            <a href="https://vickyfirnansyah.github.io/Anon_E-Commerce-Web/"
+              ><i class="fas fa-external-link-alt"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="recent-project-box">
+          <img src="assets/img/project/kalkulator.png" alt="Calculator" />
+          <div class="recent-project-layer">
+            <h4>Calculator</h4>
+            <p>
+              Interactive digital calculator with dark theme, built using HTML,
+              CSS and JavaScript.
+            </p>
+            <a
+              href="https://vickyfirnansyah.github.io/kalkulator-byVickyFirnansyah/"
+              ><i class="fas fa-external-link-alt"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- footer design -->
     <footer class="footer">
@@ -50,7 +147,7 @@
       </div>
 
       <div class="footer-iconTop">
-        <a href="#home"><i class="fas fa-arrow-up"></i></a>
+        <a href="#"><i class="fas fa-arrow-up"></i></a>
       </div>
     </footer>
 
@@ -61,6 +158,7 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <!-- custom js -->
-    <script src="script.js"></script>
+    <script src="assets/js/darkmode.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

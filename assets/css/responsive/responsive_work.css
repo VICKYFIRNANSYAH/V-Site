@@ -1,0 +1,42 @@
+/* ============================================================================
+   RESPONSIVE STYLES - Mobile & Tablet Only (Tidak mengubah tampilan Desktop)
+============================================================================ */
+
+/* -------------------------------
+   Tablet (≤ 1024px)
+-------------------------------- */
+@media (max-width: 1024px) {
+  .recent-project-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .recent-project-container .recent-project-box {
+    width: 100%;
+  }
+}
+
+/* -------------------------------
+   Mobile (≤ 768px)
+-------------------------------- */
+@media (max-width: 768px) {
+  .btn,
+  .all-project-btn {
+    font-size: 1.1rem;
+    padding: 0.5rem 1.3rem;
+  }
+}
+
+/* -------------------------------
+   Extra Small Devices (≤ 480px)
+-------------------------------- */
+@media (max-width: 480px) {
+  .recent-project-layer h4 {
+    font-size: 2rem;
+  }
+
+  .recent-project-layer p {
+    font-size: 1.3rem;
+  }
+}

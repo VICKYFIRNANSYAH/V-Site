@@ -14,7 +14,7 @@
 
     <!-- custom css -->
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/contact.css" />
+    <link rel="stylesheet" href="assets/css/achievement.css" />
     <link rel="stylesheet" href="assets/css/gradient.css" />
     <link
       rel="stylesheet"
@@ -39,19 +39,19 @@
         <a href="about.html" class="nav-link"
           ><i class="fas fa-user"></i>ABOUT</a
         >
-        <a href="achievement.html" class="nav-link"
+        <a href="achievement.html" class="active nav-link"
           ><i class="fa-solid fa-medal"></i>ACHIEVEMENT</a
         >
         <a href="comingsoon.html" class="nav-link"
           ><i class="fas fa-layer-group"></i>SERVICES</a
         >
-        <a href="comingsoon.html" class="nav-link"
+        <a href="works.html" class="nav-link"
           ><i class="fas fa-folder-open"></i>WORKS</a
         >
         <a href="comingsoon.html" class="nav-link"
           ><i class="fas fa-store"></i>STORE</a
         >
-        <a href="contact.html" class="active nav-link"
+        <a href="contact.html" class="nav-link"
           ><i class="fas fa-comment-dots"></i>CONTACT</a
         >
       </nav>
@@ -72,11 +72,11 @@
 
       <a href="index.html" class="nav-link">HOME</a>
       <a href="about.html" class="nav-link">ABOUT</a>
-      <a href="achievement.html" class="nav-link">ACHIEVEMENT</a>
+      <a href="achievement.html" class="active nav-link">ACHIEVEMENT</a>
       <a href="comingsoon.html" class="nav-link">SERVICES</a>
-      <a href="comingsoon.html" class="nav-link">WORKS</a>
+      <a href="works.html" class="nav-link">WORKS</a>
       <a href="comingsoon.html" class="nav-link">STORE</a>
-      <a href="contact.html" class="active nav-link">CONTACT</a>
+      <a href="contact.html" class="nav-link">CONTACT</a>
 
       <div class="sidebar-footer">
         <a href="comingsoon.html" class="btn register-btn">REGISTER</a>
@@ -87,89 +87,86 @@
       </div>
     </div>
 
-    <!-- contact section design -->
-    <section class="contact">
-      <h2 class="heading"><span>CONTACT</span> US</h2>
-      <form id="contact-form" novalidate>
-        <!-- Honeypot anti-bot -->
-        <input
-          type="text"
-          name="_gotcha"
-          style="display: none"
-          tabindex="-1"
-          autocomplete="off"
+    <!-- portofolio section design -->
+    <section class="portfolio container">
+      <div class="certificate">
+        <img
+          src="assets/img/Sertifikat/Sertif Muhammad Vicky Firnansyah_SMAN 1 PURWOASRI_page-0001.jpg"
+          alt="Digital Application Developer Certificate"
         />
-
-        <div class="input-box">
-          <div class="input-field">
-            <input
-              type="text"
-              name="name"
-              id="name"
-              required
-              pattern="^[\p{L}\s]+$"
-              placeholder=" "
-              aria-label="Full Name"
-              autocomplete="name"
-            />
-            <label for="name">Full Name (hanya huruf)</label>
-            <small class="error-msg">Nama tidak boleh berisi angka.</small>
-          </div>
-          <div class="input-field">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              required
-              placeholder=" "
-              aria-label="Email Address"
-              autocomplete="email"
-            />
-            <label for="email">Email Address</label>
-            <small class="error-msg">Masukkan email yang valid.</small>
-          </div>
+        <div class="description">
+          <h2>Digital Application Developer<br />Mobile Application 2024</h2>
+          <p>
+            As a Digital Product Developer-Mobile Application Demo Day Digital
+            Skills Programme 2023 Collaboration of Unicef ​Indonesia with
+            Institut Teknologi Sepuluh Nopember on February 28-29, 2024.
+          </p>
         </div>
+      </div>
 
-        <div class="input-box">
-          <div class="input-field">
-            <input
-              type="tel"
-              name="phone"
-              id="phone"
-              pattern="^[0-9]{10,15}$"
-              placeholder=" "
-              aria-label="Mobile Number"
-              autocomplete="tel"
-            />
-            <label for="phone">Mobile Number</label>
-            <small class="error-msg">Nomor HP 10–15 digit.</small>
-          </div>
+      <div class="certificate">
+        <img
+          src="assets/img/Sertifikat/Sertif Muhammad Vicky Firnansyah_MEA 2023.jpg"
+          alt="Millennial Entrepreneur Award Certificate"
+        />
+        <div class="description">
+          <h2>Millennial Entrepreneur Award 2023</h2>
+          <p>
+            Winner of the 1st (one) Best Student in the Topic of Electronic
+            Equipment Maintenance and Repair in the 2023 Millennial Entrepreneur
+            Award at the Provincial Level of High School organized by the East
+            Java Provincial Education Office with the Sepuluh Nopember Institute
+            of Technology.
+          </p>
         </div>
+      </div>
 
-        <div class="input-field full">
-          <textarea
-            name="message"
-            id="message"
-            required
-            placeholder=" "
-            aria-label="Message"
-          ></textarea>
-          <label for="message">Your Message</label>
-          <small class="error-msg">Pesan tidak boleh kosong.</small>
+      <div class="certificate">
+        <img
+          src="assets/img/Sertifikat/Asisten Trainer.jpg"
+          alt="Digital Skills Assistant Coach Program 2024"
+        />
+        <div class="description">
+          <h2>Digital Skills Assistant Coach Program 2024</h2>
+          <p></p>
         </div>
+      </div>
 
-        <button type="submit" class="contact-btn" id="submit-btn">
-          <span id="btn-text">Send Message</span>
-          <span
-            class="loader"
-            id="loader"
-            role="status"
-            aria-label="Loading..."
-          ></span>
-        </button>
-        <p id="success-msg">✅ Pesan berhasil dikirim!</p>
-      </form>
+      <div class="certificate">
+        <img
+          src="assets/img/Sertifikat/Bootcamp Pelatihan.jpg"
+          alt="BootCamp Digital Skill Programe 2024"
+        />
+        <div class="description">
+          <h2>BootCamp Digital Skill Programe 2024</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="certificate">
+        <img
+          src="assets/img/Sertifikat/Digital SKill Programe.jpg"
+          alt="Digital Skill Programe 2023-2024"
+        />
+        <div class="description">
+          <h2>Digital Skill Programe 2023-2024</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="certificate">
+        <img
+          src="assets/img/Sertifikat/SMA DT Elektro.jpg"
+          alt="SMA Double Track T. Elektro 2022-2023"
+        />
+        <div class="description">
+          <h2>SMA Double Track T. Elektro 2022-2023</h2>
+          <p></p>
+        </div>
+      </div>
     </section>
+
+    <section></section>
 
     <!-- footer design -->
     <footer class="footer">
@@ -178,7 +175,7 @@
       </div>
 
       <div class="footer-iconTop">
-        <a href="#home"><i class="fas fa-arrow-up"></i></a>
+        <a href="#"><i class="fas fa-arrow-up"></i></a>
       </div>
     </footer>
 
@@ -190,7 +187,6 @@
 
     <!-- custom js -->
     <script src="assets/js/darkmode.js"></script>
-    <script src="assets/js/contact.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>

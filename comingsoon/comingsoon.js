@@ -4,7 +4,7 @@ function goBack() {
 }
 
 // Set target date
-const launchDate = new Date("2025-07-01T00:00:00").getTime();
+const launchDate = new Date("2025-09-01T00:00:00").getTime();
 
 const countdownEl = document.getElementById("countdown");
 
